@@ -1,0 +1,93 @@
+body{
+    background-color: white;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    
+    --gray-white: #FCFCFC;
+    margin: 0;
+    --widget-width:
+    
+}
+/************* HEADERRR  ******************/
+header{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    border: 1px solid red;
+    height: 4em;
+    display: grid;
+    grid-template-columns:350px 3fr 1fr;
+}
+.logo{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo-name{
+    border: 6px solid green;
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+.search-bar{
+    background-color: purple;
+    height: 4em;
+}
+h1{
+    font-size: 1.5em;
+    margin: 0;
+    padding: 0;
+}
+/************* MAIN  WRAPPER ******************/
+.wrapper{
+    width: auto;
+    height: 100%;
+    background-color: blanchedalmond;
+    
+}
+/************* SIDEBAR and main size******************/
+#sidebar{
+   position: fixed;
+    width: 350px;
+    background-color: red;
+    height: 100%;
+}
+
+
+
+/************* Main in******************/
+.main{
+    background-color: blue;
+    height: 100%;
+    width: calc(100% - 350px);
+    margin-left: 350px;
+}
+.wrapper-main{
+    padding: 2.3%;
+}
+
+.intro-image{
+    width: 100%;
+    height: 360px;
+    background-color: rebeccapurple;
+    border-radius: 15px;
+}
+
+.widgets{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 50px;
+    background-color: seagreen;
+}
+.widget-car{
+    width: 200px;
+    height: 200px;
+    background-color: salmon;
+    border-radius: 15px;
+}
+.main-dashboard{
+    width: 100px;
+    height: 200px;
+    background-color: red;
+}
