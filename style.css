@@ -4,8 +4,10 @@ body{
     font-size: 16px;
     
     --gray-white: #FCFCFC;
+    --white-main:white;
     margin: 0;
-    --widget-width:
+
+    --sidebar-width:
     
 }
 /************* HEADERRR  ******************/
@@ -13,13 +15,14 @@ header{
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-    border: 1px solid red;
     height: 4em;
     display: grid;
     grid-template-columns:350px 3fr 1fr;
+    background-color: var(--gray-white);
+    z-index: 2;
 }
 .logo{
-
+    background-color: var(--white-main) ;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -31,8 +34,12 @@ header{
     display: block;
 }
 .search-bar{
-    background-color: purple;
+   
     height: 4em;
+}
+.search-bar img{
+    height: 1.5em;
+    
 }
 h1{
     font-size: 1.5em;
@@ -50,7 +57,7 @@ h1{
 #sidebar{
    position: fixed;
     width: 350px;
-    background-color: red;
+    background-color: var(--gray-white);
     height: 100%;
 }
 
@@ -58,7 +65,7 @@ h1{
 
 /************* Main in******************/
 .main{
-    background-color: blue;
+    background-color:var(--white-main) ;
     height: 100%;
     width: calc(100% - 350px);
     margin-left: 350px;
@@ -66,28 +73,65 @@ h1{
 .wrapper-main{
     padding: 2.3%;
 }
-
+.intro-image-padre{
+    height: 20vw;
+    /* width: 100%; */
+    display: flex;
+    align-items: flex-end;
+}
 .intro-image{
+    height:16vw;
     width: 100%;
-    height: 360px;
-    background-color: rebeccapurple;
+    background: url(./img/wallpaper.jpg) no-repeat center ;
+    background-size:  auto 100%, cover;
     border-radius: 15px;
+    z-index: 1;
+    
+}
+
+.intro-image img{
+    position: relative;
+    height: 20vw;
+    bottom: 4vw;
+    left: 8vw;
+    
+    
 }
 
 .widgets{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    column-gap: 50px;
-    background-color: seagreen;
+    column-gap: 2%;
+    
+    
 }
 .widget-car{
-    width: 200px;
-    height: 200px;
-    background-color: salmon;
+    margin: 20px 0;
+    height: 190px;
+    background-color: var(--white-main) ;
     border-radius: 15px;
+    box-shadow:  12px 12px 92px #f1f2f9, 
+             -12px -12px 92px #f5f6ff;
+    
+}
+#car1{
+    /* width: 480px; */
 }
 .main-dashboard{
-    width: 100px;
-    height: 200px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
     background-color: red;
+    
+}
+
+.statics{
+    
+    height: 275px;
+    background-color: beige
+   
+}
+.statics-general{
+    
+    height: 275px;
+    background-color: blue
 }
